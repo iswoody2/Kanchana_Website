@@ -1,0 +1,242 @@
+h2 {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+  }
+
+h4{
+    font-family: "Times", cursive;
+    text-align: center;
+}
+
+
+
+/* Divider */
+
+.divider{
+    height:5px;
+    background-color: #1C1C1C;
+}
+
+
+/* Home */
+
+#Home{
+    background-image: url("./images/Logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+    background-color: #f5f5f5;
+}
+
+/* About */
+
+#About{
+    background-color: #F5F5F5;
+    padding: 3%;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+    font-family: 'Lucida Sans Regular';
+}
+
+#About img{
+    border-radius: 50%;
+    width:250px;
+    height: auto;
+    padding: 2%;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 768px){
+    .about-content{
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+        justify-content: center;
+    }
+
+    .about-content p{
+       margin-top: 10%;
+    }
+
+}
+
+/* Fashion */
+
+#Fashion{
+    padding: 5%;
+    text-align: center;
+    background-color: #F5F5F5;
+}
+
+.carousel {
+    position:relative;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 3/3;
+    overflow: hidden;
+}
+
+.slide{
+    inset: 0;
+    opacity: 0;
+    display: flex;
+    position: absolute;
+    pointer-events: none;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically*/
+    transition: opacity 0.5s ease;
+    padding: 2%;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.slide img{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 2%;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.slide[data-active]{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.carousel-button{
+    position:absolute;
+    z-index: 2;
+    top: 50%;
+    cursor:pointer;  
+    max-width: 50px; /* Fixed width */
+    max-height: 50px; /* Fixed height */
+    border: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.carousel-button:hover,
+.carousel-button:focus{
+    color: #D4BFAA;
+    background-color: #1C1C1C;
+}
+
+.carousel-button.prev{
+    left: 1rem;
+}
+
+.carousel-button.next{
+    right: 1rem;
+}
+
+/* Blog */
+
+#Beauty_Blog{
+    background-color: #F5F5F5;
+    padding: 3%;
+}
+
+.blog-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Lucida Sans Regular';
+    gap:2rem;
+}
+
+#Beauty_Blog img{
+    width:230px;
+    height: auto;
+    padding: 2%;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Review */
+
+#Review{
+    padding: 3%;
+}
+
+.review-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:1rem;
+    padding: 2%;
+}
+
+#review_img{
+    border-radius: 10%;
+    width: 80px;
+    cursor: pointer;
+}
+
+#review_text{
+    font-family: 'Lucida Sans Regular';
+    font-size: 0.9rem;
+    opacity: 0;
+    transition: opacity 1s ease, max-height 0.5s ease;
+}
+
+#review_text.show{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Contact */
+
+#Contact{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5%;
+    background-color: #F5F5F5;
+}
+
+.button-container {
+    background-color: #A58F77;
+    display: inline-block;
+    border-radius: 50px;
+    position: relative;
+    transition: all 220ms ease-in-out;
+    margin-top: 1rem;
+}
+
+.button-container.expanded {
+    transform: translate(-55%);
+}
+
+.button-container button{
+    border:none;
+    background-color: #D4BFAA;
+    padding: .8rem 1.6rem;
+    border-radius: 50px;
+    font-weight: 900;
+    font-family: "Dancing Script", cursive;
+    font-size: 1.2rem;
+    width: 100%;
+    position: relative;
+    left: 10px;
+    bottom:10px;
+    cursor: pointer;
+    transition: all 120ms ease-in-out;
+}
+
+.button-container button:hover{
+    left: 0;
+    bottom: 0;
+}
+
+
