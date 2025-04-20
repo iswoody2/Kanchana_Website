@@ -153,11 +153,11 @@ h4{
     flex-direction: row;
     align-items: center;
     font-family: 'Lucida Sans Regular';
-    gap:2rem;
+    gap:1rem;
 }
 
 #Beauty_Blog img{
-    width:230px;
+    width:225px;
     height: auto;
     padding: 2%;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
