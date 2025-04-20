@@ -124,6 +124,7 @@ h4{
     align-items: center;
     justify-content: center;
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    color: #1C1C1C;
 }
 
 .carousel-button:hover,
@@ -194,6 +195,14 @@ h4{
     visibility: visible;
 }
 
+/* Copyright */
+
+#Copyright{
+    padding: 2%;
+    font-family: 'Lucida Sans Regular';
+}
+
+
 
 /* Contact */
 
@@ -221,6 +230,7 @@ h4{
 .button-container button{
     border:none;
     background-color: #D4BFAA;
+    color: #1C1C1C;
     padding: .8rem 1.6rem;
     border-radius: 50px;
     font-weight: 900;
