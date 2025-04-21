@@ -181,7 +181,7 @@ button{
 
 .blog-content{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     font-family: 'Lucida Sans Regular';
     gap: 2rem;
@@ -194,6 +194,21 @@ button{
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
+
+@media (min-width: 768px){
+    .blog-content{
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+        justify-content: center;
+    }
+
+    .blog-content p{
+       margin-top: 10%;
+    }
+
+}
+
 /* Review */
 
 #Review{
@@ -204,14 +219,14 @@ button{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap:1rem;
-    padding: 2%;
+    gap: 1.5em;
+    padding: 3%;
 }
 
 #review_img{
     border-radius: 10%;
     width: 20%;
-    height: auto;
+    height: 20%;
     cursor: pointer;
 }
 
