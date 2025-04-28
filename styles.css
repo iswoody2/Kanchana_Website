@@ -225,8 +225,8 @@ button{
 
 #review_img{
     border-radius: 10%;
-    width: 20%;
-    height: 20%;
+    width: 100px;
+    height: auto;
     cursor: pointer;
 }
 
