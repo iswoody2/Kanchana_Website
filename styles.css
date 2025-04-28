@@ -181,33 +181,21 @@ button{
 
 .blog-content{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     font-family: 'Lucida Sans Regular';
-    gap: 1.2rem;
+    gap: 1.4rem;
 }
 
 #Beauty_Blog img{
-    width: 30%;
+    width: 40%;
     height: auto;
     padding: 2%;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 
-@media (min-width: 768px){
-    .blog-content{
-        flex-direction: row;
-        align-items: flex-start;
-        text-align: left;
-        justify-content: center;
-    }
 
-    .blog-content p{
-       margin-top: 5%;
-    }
-
-}
 
 /* Review */
 
