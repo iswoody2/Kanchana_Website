@@ -61,13 +61,13 @@ button{
     background-repeat: no-repeat;
     background-position: center;
     height: 50vh;
-    background-color: #f5f5f5;
+    background-color: #D3D3D3;
 }
 
 /* About */
 
 #About{
-    background-color: #F5F5F5;
+    background-color: #D3D3D3;
     padding: 3%;
 }
 
@@ -106,7 +106,7 @@ button{
 #Fashion{
     padding: 3%;
     text-align: center;
-    background-color: #F5F5F5;
+    background-color: #D3D3D3;
 }
 
 .carousel {
@@ -175,7 +175,7 @@ button{
 /* Blog */
 
 #Beauty_Blog{
-    background-color: #F5F5F5;
+    background-color: #D3D3D3;
     padding: 3%;
 }
 
@@ -201,6 +201,7 @@ button{
 
 #Review{
     padding: 3%;
+    background-color: #D3D3D3;
 }
 
 .review-content{
@@ -234,6 +235,7 @@ button{
 #Copyright{
     padding: 2%;
     font-family: "Times", cursive;
+    background-color: #D3D3D3;
 }
 
 
@@ -245,7 +247,7 @@ button{
     justify-content: center;
     flex-direction: column;
     padding: 5%;
-    background-color: #F5F5F5;
+    background-color: #D3D3D3;
 }
 
 .button-container {
