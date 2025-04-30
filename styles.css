@@ -15,6 +15,10 @@ button{
     color: #1C1C1C;
 }
 
+body{
+    padding-top: 56px;
+}
+
 
 
 @media(min-width:768px){
