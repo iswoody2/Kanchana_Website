@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-const text = document.querySelectorAll('#web_text');
+const text = document.querySelectorAll('#text');
 
 
 function isElementInViewport(el) {
