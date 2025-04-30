@@ -22,11 +22,26 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-const review_image = document.querySelectorAll('#review_img');
-const review_text = document.querySelectorAll('#review_text');
+const text = document.querySelectorAll('#web_text');
 
-review_image.forEach((review_image, index) => {
-    review_image.addEventListener("click", function(){
-    review_text[index].classList.toggle("show");
+
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+// Function to handle scroll event
+function handleScroll() {
+    text.forEach(block => {
+        if (isElementInViewport(block)) {
+            block.style.opacity = 1;  // Make the block visible
+        }
     });
-});
+}
+
+// Listen for the scroll event
+window.addEventListener('scroll', handleScroll);
