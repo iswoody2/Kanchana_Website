@@ -1,5 +1,5 @@
 h2 {
-    font-family: "Dancing Script", cursive;
+    font-family: "Tiempos Text";
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -7,7 +7,7 @@ h2 {
   }
 
 h3{
-    font-family: "Times", cursive;
+    font-family: "Tiempos Text";
     text-align: center;
 }
 
@@ -17,6 +17,12 @@ button{
 
 body{
     padding-top: 56px;
+}
+
+#text{
+    font-family: "Times", cursive;
+    opacity: 0;
+    transition: opacity 1s ease, max-height 0.5s ease;
 }
 
 
@@ -61,7 +67,7 @@ body{
 
 #Home{
     background-image: url("./images/Logo.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 50vh;
@@ -223,17 +229,6 @@ body{
     cursor: pointer;
 }
 
-#review_text{
-    font-family: "Times", cursive;
-    opacity: 0;
-    transition: opacity 1s ease, max-height 0.5s ease;
-}
-
-#review_text.show{
-    opacity: 1;
-    visibility: visible;
-}
-
 /* Copyright */
 
 #Copyright{
@@ -255,7 +250,7 @@ body{
 }
 
 .button-container {
-    background-color: #246D6d;
+    background-color: #3a1f47;
     display: inline-block;
     border-radius: 50px;
     position: relative;
@@ -269,12 +264,12 @@ body{
 
 .button-container button{
     border:none;
-    background-color: #2E8B8B;
+    background-color: #4B285C;
     color: #FFFFFF;
     padding: .8rem 1.6rem;
     border-radius: 50px;
     font-weight: 900;
-    font-family: "Dancing Script", cursive;
+    font-family: "Times", cursive;
     width: 100%;
     position: relative;
     left: 10px;
