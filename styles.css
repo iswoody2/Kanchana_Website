@@ -75,13 +75,13 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     height: 50vh;
-    background-color: #D3D8D8;
+    background-color: #D1D3D7;
 }
 
 /* About */
 
 #About{
-    background-color: #D3D8D8;
+    background-color: #D1D3D7;
     padding: 3%;
 }
 
@@ -120,7 +120,7 @@ body{
 #Fashion{
     padding: 3%;
     text-align: center;
-    background-color: #D3D8D8;
+    background-color: #D1D3D7;
 }
 
 .carousel {
@@ -189,7 +189,7 @@ body{
 /* Blog */
 
 #Beauty_Blog{
-    background-color: #D3D8D8;
+    background-color: #D1D3D7;
     padding: 3%;
 }
 
@@ -215,7 +215,7 @@ body{
 
 #Review{
     padding: 3%;
-    background-color: #D3D8D8;
+    background-color: #D1D3D7;
 }
 
 .review-content{
@@ -238,7 +238,7 @@ body{
 #Copyright{
     padding: 2%;
     font-family: "Times", cursive;
-    background-color: #D3D8D8;
+    background-color: #D1D3D7;
 }
 
 
@@ -250,7 +250,7 @@ body{
     justify-content: center;
     flex-direction: column;
     padding: 5%;
-    background-color: #D3D8D8;
+    background-color: #D1D3D7;
 }
 
 .button-container {
