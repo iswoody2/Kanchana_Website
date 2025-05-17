@@ -128,7 +128,7 @@ body{
     max-width: 100%;
     height: auto;
     /*aspect-ratio: 4/3; */
-    overflow: visible;
+    overflow: hidden;
 }
 
 .slide{
@@ -144,9 +144,10 @@ body{
 }
 
 .slide img{
+    aspect-ratio: 3/4;
     max-width: 100%;
     height: auto; /* Preserves aspect ratio */
-    object-fit: block; 
+    object-fit: cover; 
     padding: 7%;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
