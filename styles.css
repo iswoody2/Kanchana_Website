@@ -144,8 +144,8 @@ body{
 }
 
 .slide img{
-    max-width: 60%;
-    height: 50%;
+    width:250px;
+    height: auto;
     padding: 2%;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
