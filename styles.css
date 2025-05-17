@@ -26,26 +26,26 @@ body{
 }
 
 .section {
-    scroll-margin-top: 90px; 
+    scroll-margin-top: 90px; /* Adjust based on your header height */
 }
 
 
 
 @media(min-width:768px){
     p{
-        font-size: 15px;
+        font-size: 18px;
     }
     h2{
         font-size: 22px;
     }
     h3{
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 
 @media(min-width:1023px){
     p{
-        font-size: 16px;
+        font-size: 24px;
     }
     h2{
         font-size: 26px;
@@ -82,7 +82,7 @@ body{
 
 #About{
     background-color: #D1D3D7;
-    padding: 3%;
+    padding: 2%;
 }
 
 .about-content{
@@ -127,7 +127,7 @@ body{
     position:relative;
     max-width: 100%;
     height: auto;
-    aspect-ratio: 3/3;
+    aspect-ratio: 4/3;
     overflow: hidden;
 }
 
@@ -137,15 +137,14 @@ body{
     display: flex;
     position: absolute;
     pointer-events: none;
-    justify-content: center; 
-    align-items: center;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically*/
     transition: opacity 0.5s ease;
-    padding: 2%;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 .slide img{
-    width: 70%;
+    max-width: 70%;
     height: 10%;
     padding: 2%;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
@@ -161,8 +160,8 @@ body{
     z-index: 2;
     top: 50%;
     cursor:pointer;  
-    max-width: 50px;
-    max-height: 50px; 
+    max-width: 50px; /* Fixed width */
+    max-height: 50px; /* Fixed height */
     border: none;
     font-size: 1.5rem;
     display: flex;
@@ -186,10 +185,51 @@ body{
     right: 1rem;
 }
 
+/* Popup */
+
+.popup{
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #D3D3D3;
+    padding: 5%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+
+.close_button{
+    /*Don't apply directly to button 
+    'align-items' and flex-direction, 
+    unless parent is a flex container */
+    background-color: #C0C0C0;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.close_button:hover{
+    background-color: #a9a9a9;
+    transition: background-color 0.3s ease;
+}
+
+/* Show popup when 'visible' class is added to popup1 */
+.popup.visible{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #D3D3D3;
+}
+
+
+
+
+
 /* Blog */
 
 #Beauty_Blog{
-    background-color: #D1D3D7;
+    background-color: #D3D3D3;
     padding: 3%;
 }
 
@@ -198,24 +238,22 @@ body{
     flex-direction: row;
     align-items: center;
     font-family: 'Lucida Sans Regular';
-    gap: 1.4rem;
+    gap: 1.3rem;
 }
 
 #Beauty_Blog img{
-    width: 40%;
+    width: 30%;
     height: auto;
     padding: 2%;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 
-
-
 /* Review */
 
 #Review{
     padding: 3%;
-    background-color: #D1D3D7;
+    background-color: #D3D3D3;
 }
 
 .review-content{
@@ -238,7 +276,7 @@ body{
 #Copyright{
     padding: 2%;
     font-family: "Times", cursive;
-    background-color: #D1D3D7;
+    background-color: #d3d8d8;
 }
 
 
@@ -249,8 +287,8 @@ body{
     display:flex;
     justify-content: center;
     flex-direction: column;
-    padding: 5%;
-    background-color: #D1D3D7;
+    padding: 3%;
+    background-color: #D3D8D8;
 }
 
 .button-container {

@@ -45,3 +45,52 @@ function handleScroll() {
 
 // Listen for the scroll event
 window.addEventListener('scroll', handleScroll);
+
+
+
+// Function to make a popup 
+
+// Select all images that 
+// should trigger a popup 
+// (marked with class 'popup-trigger')
+const popupTriggers = document.querySelectorAll('.popup-trigger');
+
+const popups = document.querySelectorAll(".popup");
+
+// Function to hide all popups
+function hideAllPopups() {
+    // Loops through each popup and then removes their visibility 
+    popups.forEach(popup => {
+      popup.classList.remove('visible');
+    });
+  }
+
+// Loop through each image that triggers a popup
+popupTriggers.forEach(image => {
+    image.addEventListener('click', () => {
+      // First hide any open popups
+      hideAllPopups();
+  
+      // Read the value of data-popup attribute, e.g. 'popup1' or 'popup2'
+      const popupId = image.getAttribute('data-popup');
+  
+      // Find the popup element with the corresponding ID
+      const popupToShow = document.getElementById(popupId);
+  
+      // Add the 'visible' class to show it
+      if (popupToShow) {
+        popupToShow.classList.add('visible');
+      }
+    });
+  });
+
+// Attach click event to all close buttons inside popups
+popups.forEach(popup => {
+    const closeBtn = popup.querySelector('.close_button');
+    if (closeBtn) {
+      closeBtn.addEventListener('click', () => {
+        // Remove 'visible' class from this popup to hide it
+        popup.classList.remove('visible');
+      });
+    }
+  });
