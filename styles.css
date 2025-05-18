@@ -145,7 +145,7 @@ body{
 
 .slide img{
     aspect-ratio: 3/4;
-    max-width: 60%;
+    max-width: 75%;
     height: auto; /* Preserves aspect ratio */
     object-fit: cover; 
     padding: 7%;
