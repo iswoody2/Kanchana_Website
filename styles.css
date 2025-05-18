@@ -118,7 +118,7 @@ body{
 /* Fashion */
 
 #Fashion{
-    padding: 3%;
+    /* padding: 3%; */
     text-align: center;
     background-color: #D1D3D7;
 }
@@ -148,6 +148,7 @@ body{
     max-width: 75%;
     height: auto; /* Preserves aspect ratio */
     object-fit: cover; 
+    padding: 7%;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
