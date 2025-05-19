@@ -134,7 +134,7 @@ body{
 .slide{
     inset: 0;
     opacity: 0;
-    display: flex;
+    display: relative;
     position: absolute;
     pointer-events: none;
     justify-content: center; /* Center horizontally */
