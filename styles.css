@@ -127,7 +127,7 @@ body{
     position:flex;
     max-width: 100%;
     height: auto;
-    aspect-ratio: 3/4; 
+    aspect-ratio: 4/4; 
     overflow: hidden;
 }
 
@@ -144,8 +144,8 @@ body{
 }
 
 .slide img{
-    aspect-ratio: 3/4;
-    max-width: 65%;
+    aspect-ratio: 4/4;
+    max-width: 95%;
     height: auto; /* Preserves aspect ratio */
     object-fit: cover; 
     padding: 7%;
