@@ -124,7 +124,7 @@ body{
 }
 
 .carousel {
-    position:relative;
+    position:flex;
     max-width: 100%;
     height: auto;
     aspect-ratio: 3/4; 
@@ -195,7 +195,7 @@ body{
     flex-direction: column;
     text-align: center;
     background-color: #D3D3D3;
-    padding: 3%;
+    /*padding: 3%*/
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
